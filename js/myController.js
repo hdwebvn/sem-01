@@ -4,7 +4,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", { templateUrl: "./views/home.html", controller: "myControll" })
-    // .when("/bio", { templateUrl: "./views/detail-biography.html" })
+        .when("/bio", { templateUrl: "./views/detail-biography.html", controller: "myControll" })
     // .otherwise({ redirectTo: '/' })
     // $locationProvider.html5Mode(true);
 });
