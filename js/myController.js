@@ -1,10 +1,10 @@
 // Khai bao Angular App
 var app = angular.module("myApp", ["ngRoute"]);
-app.config(function ($routeProvider, $locationProvider) {
+// app.config(function ($routeProvider, $locationProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
-        .when("/", { templateUrl: "./views/home.html" })
-        .when("/index.html", { templateUrl: "./views/home.html" })
-        .when("/bio", { templateUrl: "./views/detail-biography.html" })
+        .when("/", { templateUrl: "./views/home.html", controller: "myControll" })
+    // .when("/bio", { templateUrl: "./views/detail-biography.html" })
     // .otherwise({ redirectTo: '/' })
     // $locationProvider.html5Mode(true);
 });
